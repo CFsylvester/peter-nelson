@@ -1,0 +1,88 @@
+:root {
+    --grey: #808080;
+    --black: #000000;
+}
+#index {
+    background-color: var(--black); 
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--grey);
+}
+body {
+    background-color: var(--grey)
+}
+.row{
+    background-color: var(--black)
+}
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+.myborder{
+    border: 1px solid yellow;
+}
+
+.practiceRow{
+    padding: 0px;
+    width: 650px;
+}
+
+.practiceColumn1 {
+    float: left;
+    width: 50%;
+}
+
+.practiceColumn2 {
+    float: left;
+    width: 50%;
+    height: 103px;
+}
+
+.title-column{
+    float: left;
+    width: 33.3%;
+    height: 103px;
+    position: relative;
+}
+
+.title-text{
+    position: absolute;
+    bottom: 0;
+}
+.flexFont {
+    height:103px;
+    width:100%;
+    position: relative;
+}
+.line {
+    border-bottom: 1px solid var(--grey);
+}
+/* Clear floats after the columns */
+.practiceRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.flexFont span {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    margin-bottom: -15px;
+    /* margin-left: -42px; */
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.practiceColumn1 {
+    width: 100%;
+}
+.practiceColumn2 {
+    width: 100%;
+    }
+}
+
+
+
+  
