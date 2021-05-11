@@ -3,7 +3,6 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     $(this).ekkoLightbox();
     console.log(this)
 });
-
 if (document.images)
 {
   // The main picture at the top of the page

@@ -1,6 +1,8 @@
 :root {
     --grey: #808080;
     --black: #000000;
+    --off-white: #fffbfb;
+    --off-red: #ff7575; 
 }
 #index {
     background-color: var(--black); 
@@ -54,6 +56,7 @@ body {
 }
 .column2-nav ul{
     margin-top: 60px;
+    padding-left: 90px;
 }
 .column1-nav ul{
     margin-top: 30px;
@@ -65,6 +68,20 @@ ul {
 ul li {
     list-style-type: none;
     padding-top: 10px;
+}
+
+li:hover {
+    cursor:pointer
+}
+li:hover a {
+    text-decoration: none;
+    color: var(--off-white);
+}
+li span {
+    color: var(--black);
+}
+li:hover span{
+    color: var(--off-red);
 }
 /* Clear floats after the columns */
 .practiceRow:after {
@@ -79,15 +96,55 @@ ul li {
     margin-bottom: -15px;
     /* margin-left: -42px; */
 }
+.mobile-nav {
+    display: none;
+    color: var(--grey);
+    padding-top: 40px;
+}
+li a {
+    color: var(--grey);
+}
+.ekko-lightbox-nav-overlay a:first-child span {
+    color: white;
+    font-size: 40px;
+}
+.ekko-lightbox-nav-overlay {
+    margin: -50px 10px;
+}
+.ekko-lightbox-nav-overlay a:nth-child(2) span {
+    color: white;
+    font-size: 40px;
+    margin: 15px;
+}
+.home {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: underline;
+}
+.italics{
+    font-style: italic;
+    font-size: 14px;
+}
   
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-.column1 {
-    width: 100%;
-}
-.column2 {
-    width: 100%;
+    .column1 {
+        width: 100%;
     }
+    .column2 {
+        width: 100%;
+    }
+    .column1-nav {
+        display: none; 
+    }
+    .column2-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: inline-flex;
+    }
+    
 }
 
 
