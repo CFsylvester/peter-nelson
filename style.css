@@ -9,10 +9,13 @@
     font-family: Arial, Helvetica, sans-serif;
     color: var(--grey);
 }
+#peter-nelson{
+    background-color: #FFFFFF;
+}
 body {
     background-color: var(--grey)
 }
-.row{
+.black{
     background-color: var(--black)
 }
 .myborder{
