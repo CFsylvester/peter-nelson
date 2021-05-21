@@ -129,6 +129,22 @@ li a {
     font-style: italic;
     font-size: 14px;
 }
+#page-nav {
+    width: 180px;
+}
+#one, #two, #three {
+    float: left;
+    width: 50px;
+}
+#one:hover {
+    color: white;
+}
+#two:hover {
+    color: white;
+}
+#three:hover {
+    color: white;
+}
   
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {

@@ -29,7 +29,33 @@ function show(shown, hidden) {
     document.getElementById(hidden).style.display='none';
     return false;
 }
-  
+
+$("#one").click(function() {
+    $(".page1").css("display", "flex");
+    $(".page2").css("display", "none");
+    $(".page3").css("display", "none");
+    $("#one").css("color", "white")
+    $("#two").css("color", "black")
+    $("#three").css("color", "black");
+});
+
+$("#two").click(function() {
+    $(".page1").css("display", "none");
+    $(".page2").css("display", "flex");
+    $(".page3").css("display", "none");
+    $("#two").css("color", "white");
+    $("#one").css("color", "black");
+    $("#three").css("color", "black");
+}); 
+
+$("#three").click(function() {
+    $(".page1").css("display", "none");
+    $(".page2").css("display", "none");
+    $(".page3").css("display", "flex");
+    $("#two").css("color", "black");
+    $("#one").css("color", "black");
+    $("#three").css("color", "white");
+}); 
 
 window.onload = function(event) {
     flexFont();
